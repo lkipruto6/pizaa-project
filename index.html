@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <title>Pizzeria:Order yours now!</title>
+</head>
+<body>
+    <div class="logo">
+    <img src="images/logo.jpg" width="100" height="100">
+    </div>
+    <div class="main container">
+        <div class="landingpage">
+            <h2 class="pizzeria text-blue text-bold text-center">The PIZZERIA</h2>
+        </div>
+        <div class="menu">
+            <h3 class="menu text-center">MENU</h3>
+            <div class="row">
+                <div class="col-md-6 mt-4">
+                    <div>
+                        <img class="card-img-top one" src="images/veggiepizza.jpg" width="200" height="370">
+                    </div>
+                    <div class="overlay1">
+                        <h5 class="text-bold">Pizza Veg Extravaganza</h5>
+                    </div>
+                </div>
+            <div class="col-md-6 mt-4">
+                <div>
+                    <img class="card-img-top" src="images/napoli.jpg" width="200" height="370">
+                </div>
+                <div class="overlay">
+                    <h5 class="text-bold">Pizza Neapolitan Cheese</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <div>
+                    <img class="card-img-top" src="images/mexican.jpg" width="200" height="370">
+                </div>
+                <div class="overlay">
+                    <h5 class="text-bold">Pizza Mexican Green Wave</h5>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <div>
+                    <img class="card-img-top" src="images/margerita.jpg" width="200" height="370">
+                </div>
+                <div class="overlay">
+                    <h5 class="text-bold">Pizza Margherita extra</h5>
+                </div>
+            </div>
+    <div>
+            <div class="order">
+                
+                    <h3><u>Enter your order details below</u> <br></h3>
+                        
+                    <form action="" id="pizzainfo">
+                        <label for=""><b>Choose your pizza size i.e Large, Medium, Small</b></label>
+                        <select class="form-control" name="size" id="size">
+                            <option value="1200">Large @ 2500/-</option>
+                            <option value="900">Medium @ 1800/-</option>
+                            <option value="600">Small @ 1200/-</option>
+                        </select>
+                        </form>
+                        
+                        <label form=""><b>Toppings:</b></label> <br>
+                    
+                    <input value="150" type="checkbox" id="toppingone">Mushrooms
+                    <input value="150" type="checkbox" id="toppingone">Sausage
+                    <input value="150" type="checkbox" id="toppingone">Onions
+                    <input value="150" type="checkbox" id="toppingone">Tikka Sauce
+                    <input value="150" type="checkbox" id="toppingone">Mozarella Cheese
+                    <input value="150" type="checkbox" id="toppingone">Sausage
+                    <input value="150" type="checkbox" id="toppingone">Black Olives
+                    </br>
+                    
+                    
+                   
+                   <br>
+                    <label for=""><b>Crust type</b></label>
+                    <select class="form-control" name="" id="crust">
+                        <option value="230" name="crust">Thin crust @ 230/-
+                        <option value="250" name="crust">Thick crust @ 250/-
+                        <option value="300" name="crust">Cheese filled @  300/-
+                    </select>
+                    <label for="">Input Quantity</label>
+                    <input class="form-control form-group" type="number" id="numberofpizza">
+                    <button name="button" type="submit" id="submit" value="Check-Out"
+                        onclick="calctotalPrice()">Submit</button>
+                        <p>Press submit button above to get total to be paid</p>
+                </form>
+                    </br>
+            
+            </div>
+            <div id="formlocation">
+                <h3><u>DELIVERY</u></h3>
+                <form id="delivery">
+                    <label for="name">Name:</label>
+                    <input class="form-control" type="text" name="" id="name"  placeholder ="Full Names" required="required">
+                    <label for="location">Location:</label>
+                    <input class="form-control" type="text" id="location" placeholder="e.g Kilimani,South B">
+                    <label for="phonenumber">Phone Number:</label>
+                    <input class="form-control" type="tel" placeholder="+2547xxxxxxxx" id="number"> <br>
+                    <button type="submit" name="button" id="submit">DELIVER</button>
+                </form>
+            </div>
+        
+    
+
+</body>
+
+<script src="jquery.js"></script>
+<script src="script.js"></script>
+
+</html>
+
+
